@@ -18,10 +18,37 @@ A simple web application built with Python Flask that provides user registration
 
 ## Installation
 
+### Online Installation
+
 1. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+### Offline Installation
+
+All required wheel files are included in the `lib/` directory for offline installation.
+
+1. Install dependencies from the lib folder:
+```bash
+pip install --no-index --find-links=lib -r requirements.txt
+```
+
+Or install all wheels directly:
+```bash
+pip install lib/*.whl
+```
+
+### Included Dependencies
+
+The `lib/` folder contains the following wheel files:
+- Flask 3.0.0
+- Werkzeug 3.0.1
+- Jinja2 3.1.6
+- click 8.3.0
+- itsdangerous 2.2.0
+- blinker 1.9.0
+- MarkupSafe 3.0.3
 
 ## Running the Application
 
