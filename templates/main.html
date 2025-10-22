@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page{% endblock %}
+
+{% block content %}
+    <h1>Welcome!</h1>
+    <div class="welcome-message">
+        <p>Hello, <strong>{{ username }}</strong>!</p>
+        <p>You have successfully logged in.</p>
+    </div>
+    <form method="GET" action="{{ url_for('logout') }}">
+        <button type="submit" class="logout-btn">Logout</button>
+    </form>
+{% endblock %}
